@@ -1,0 +1,18 @@
+.drawerDiv {
+  width: 200px;
+}
+
+.nav-title {
+  text-align: center;
+  padding: 10px 0;
+  margin: 30px 0 20px 0;
+}
+
+.name-title {
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: 30px;
+  flex-wrap: wrap;
+  width: 200px;
+  color: #008073;
+}

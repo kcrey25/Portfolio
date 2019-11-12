@@ -1,0 +1,26 @@
+.skill {
+    margin: 20px;
+    flex-grow: 1;
+    width: 350px;
+}
+
+.skill-container {
+    display: flex;
+}
+
+.skill-title {
+    font-weight: 900;
+    font-size: 2em;
+    margin: auto 10px;
+}
+
+.skill-notes {
+    font-family: Roboto, cursive;
+    font-size: 20px;
+}
+
+.mySkills {
+   display: flex;
+   margin: 0 50px;
+   flex-wrap: wrap;
+}

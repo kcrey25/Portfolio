@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; /*footer-height*/
+}
+
+* {
+  margin: 0;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
