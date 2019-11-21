@@ -4,11 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(() => ({
   about: {
     background: '#008073',
-    height: '100px'
+    height: '100px',
+    color: 'white'
   },
   aboutBody: {
     height: 'calc(100vh - 100px)',
-    background: 'gray'
+    background: 'gray',
+    color: 'white'
   }
 }));
 

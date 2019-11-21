@@ -2,28 +2,28 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
-  contact: {
-    background: '#F44336',
+  experience: {
+    background: '#00BBD3',
     height: '100px',
     color: 'white'
   },
-  contactBody: {
+  experienceBody: {
     height: 'calc(100vh - 100px)',
-    background: 'gray',
+    background: 'maroon',
     color: 'white'
   }
 }));
 
-const Contact = () => {
+const Experience = () => {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.contact}>
-        <h1>Contact</h1>
+      <div className={classes.experience}>
+        <h1>Experience</h1>
       </div>
-      <div className={classes.contactBody}>Contact Body</div>
+      <div className={classes.experienceBody}>Experience Body</div>
     </>
   );
 };
 
-export default Contact;
+export default Experience;
