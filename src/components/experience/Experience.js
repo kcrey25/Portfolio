@@ -3,13 +3,13 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   experience: {
-    background: '#00BBD3',
+    background: '#008073',
     height: '100px',
     color: 'white'
   },
   experienceBody: {
     height: 'calc(100vh - 100px)',
-    background: 'maroon',
+    background: 'gray',
     color: 'white'
   }
 }));

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
@@ -7,6 +7,7 @@ import ExperienceIcon from '@material-ui/icons/TrendingUp';
 import MailIcon from '@material-ui/icons/MailOutline';
 import SkillsIcon from '@material-ui/icons/Equalizer';
 import EducationIcon from '@material-ui/icons/School';
+import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
 import '../../css/Nav.css';
 import Drawer from '@material-ui/core/Drawer';
@@ -30,53 +31,106 @@ const useStyles = makeStyles(() => ({
   },
   contactIcon: {
     color: '#F44336'
+  },
+  smallNav: {
+    height: '65px',
+    width: '100%',
+    display: 'block',
+    position: 'fixed',
+    zIndex: 2,
+    background: 'white',
+    boxShadow: '0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)'
+  },
+  menuIcon: {
+    padding: '15px 15px',
+    color: '#008073',
+    position: 'fixed',
+    float: 'left'
+  },
+  navTitle: {
+    textAlign: 'center',
+    margin: '15px',
+    width: '100%'
+  },
+  nameTitle: {
+    textAlign: 'center',
+    fontFamily: 'sans-serif',
+    fontSize: '22px',
+    width: '100%',
+    color: '#008073'
+  },
+  position: {
+    color: '#B9B9B9'
   }
 }));
 
 const Nav = ({ isDesktop, scrolling }) => {
   const classes = useStyles();
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const smallNav = (
+    <nav className={classes.smallNav}>
+      <MenuIcon
+        fontSize="large"
+        className={classes.menuIcon}
+        onClick={() => setDrawerOpen(!drawerOpen)}
+      />
+      <div className={classes.navTitle}>
+        <p className={classes.nameTitle}>Casey Christensen</p>
+        <p className={classes.position}>Software Engineer</p>
+      </div>
+    </nav>
+  );
+
   return (
-    <Drawer variant={isDesktop ? 'permanent' : 'temporary'}>
-      <div className="nav-title" onClick={() => scrolling('intro')}>
-        <p className="name-title">Casey Christensen</p>
-        <p>Software Engineer</p>
-      </div>
-      <Divider />
-      <div className="drawerDiv">
-        <List>
-          <ListItem button onClick={() => scrolling('about')}>
-            <ListItemIcon>
-              <PersonIcon className={classes.personIcon} />
-            </ListItemIcon>
-            <ListItemText>About</ListItemText>
-          </ListItem>
-          <ListItem button onClick={() => scrolling('experience')}>
-            <ListItemIcon>
-              <ExperienceIcon className={classes.experienceIcon} />
-            </ListItemIcon>
-            <ListItemText>Experience</ListItemText>
-          </ListItem>
-          <ListItem button onClick={() => scrolling('skills')}>
-            <ListItemIcon className={classes.skillsIcon}>
-              <SkillsIcon />
-            </ListItemIcon>
-            <ListItemText>Skills</ListItemText>
-          </ListItem>
-          <ListItem button onClick={() => scrolling('education')}>
-            <ListItemIcon>
-              <EducationIcon className={classes.educationIcon} />
-            </ListItemIcon>
-            <ListItemText>Education</ListItemText>
-          </ListItem>
-          <ListItem button onClick={() => scrolling('contact')}>
-            <ListItemIcon>
-              <MailIcon className={classes.contactIcon} />
-            </ListItemIcon>
-            <ListItemText>Contact</ListItemText>
-          </ListItem>
-        </List>
-      </div>
-    </Drawer>
+    <>
+      {!isDesktop ? smallNav : null}
+      <Drawer
+        variant={isDesktop ? 'permanent' : 'temporary'}
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        onClick={() => setDrawerOpen(false)}
+      >
+        <div className="nav-title" onClick={() => scrolling('intro')}>
+          <p className="name-title">Casey Christensen</p>
+          <p>Software Engineer</p>
+        </div>
+        <Divider />
+        <div className="drawerDiv">
+          <List>
+            <ListItem button onClick={() => scrolling('about')}>
+              <ListItemIcon>
+                <PersonIcon className={classes.personIcon} />
+              </ListItemIcon>
+              <ListItemText>About</ListItemText>
+            </ListItem>
+            <ListItem button onClick={() => scrolling('experience')}>
+              <ListItemIcon>
+                <ExperienceIcon className={classes.experienceIcon} />
+              </ListItemIcon>
+              <ListItemText>Experience</ListItemText>
+            </ListItem>
+            <ListItem button onClick={() => scrolling('skills')}>
+              <ListItemIcon className={classes.skillsIcon}>
+                <SkillsIcon />
+              </ListItemIcon>
+              <ListItemText>Skills</ListItemText>
+            </ListItem>
+            <ListItem button onClick={() => scrolling('education')}>
+              <ListItemIcon>
+                <EducationIcon className={classes.educationIcon} />
+              </ListItemIcon>
+              <ListItemText>Education</ListItemText>
+            </ListItem>
+            <ListItem button onClick={() => scrolling('contact')}>
+              <ListItemIcon>
+                <MailIcon className={classes.contactIcon} />
+              </ListItemIcon>
+              <ListItemText>Contact</ListItemText>
+            </ListItem>
+          </List>
+        </div>
+      </Drawer>
+    </>
   );
 };
 

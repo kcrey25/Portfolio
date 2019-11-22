@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   education: {
-    background: '#9C27B0',
+    background: '#008073',
     height: '100px',
     color: 'white'
   },

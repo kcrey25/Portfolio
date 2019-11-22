@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   skills: {
-    background: '#3F51B5',
+    background: '#008073',
     height: '100px',
     color: 'white'
   },

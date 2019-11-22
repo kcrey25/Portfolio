@@ -34,7 +34,10 @@ const Home = () => {
   const educationRef = useRef(null);
   const contactRef = useRef(null);
 
-  const scrollToRef = myRef => window.scrollTo(0, myRef.current.offsetTop);
+  const mobileNavHeight = isDesktop ? 0 : 65;
+
+  const scrollToRef = myRef =>
+    window.scrollTo(0, myRef.current.offsetTop - mobileNavHeight);
   const handleScroll = section => {
     switch (section) {
       case 'about':
@@ -90,7 +93,11 @@ const Home = () => {
       <Nav isDesktop={isDesktop} scrolling={handleScroll} />
       <div className="intro" style={isDesktop ? { marginLeft: '200px' } : null}>
         <section id="me" className="me-section" ref={meRef}>
-          <img src={imgUrl} className="pic" />
+          <img
+            src={imgUrl}
+            className="pic"
+            style={{ marginTop: `${mobileNavHeight}px` }}
+          />
           {meSectionContent}
         </section>
         <section id="about" ref={aboutRef}>

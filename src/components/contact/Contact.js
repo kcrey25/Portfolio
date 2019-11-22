@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(() => ({
   contact: {
-    background: '#F44336',
+    background: '#008073',
     height: '100px',
     color: 'white'
   },
