@@ -1,4 +1,4 @@
-.experience {
+.about {
   background: #008073;
   color: white;
   padding: 20px 50px;
@@ -6,11 +6,6 @@
   font-family: sans-serif;
 }
 
-.experienceBody {
+.aboutBody {
   background: lightgray;
-  padding: 60px 20px 1px 20px;
-}
-
-.experienceBody > Work {
-  margin-bottom: 100px;
 }

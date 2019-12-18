@@ -1,24 +1,7 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Work from './Work';
 
 import '../../css/experience.css';
-
-const useStyles = makeStyles(() => ({
-  experience: {
-    background: '#008073',
-    color: 'white',
-    padding: '20px',
-    fontSize: '30px',
-    fontFamily: 'sans-serif',
-  },
-  experienceBody: {
-    height: 'calc(100vh - 100px)',
-    background: 'gray',
-    color: 'white',
-    padding: '20px',
-  },
-}));
 
 const ivantiExperience = [
   'Developed solutions for Windows desktop and Android applications.',
@@ -29,25 +12,58 @@ const ivantiExperience = [
   'Used Jenkins as a build and automation server.',
 ];
 
+const airForceExperience = [
+  'WPF development using C# and XAML in an Agile/Scrum environment.',
+  'Improved application maintainability by designing and implementing a new architecture.',
+  'Maintained, enhanced, and reworked a large scale application.',
+];
+
+const canyonsExperience = [
+  'Full stack development using JavaScript, HTML, CSS, SQL, Bootstrap, and ColdFusion.',
+  'Developed 4 applications in full, completely remodeled 3 others, and maintained 15.',
+  'Created and maintained databases using Microsoft SQL Server.',
+  'Helped increase group morale by using teamwork to solve difficult problems.',
+];
+
+const imagicomExperience = [
+  'Responsible for quality control using Project Tracking, SQL Server Management Studio, Virtual Machines, BrowserStack, IIS Manager, and SourceGear.',
+  'Helped resolve customer concerns by narrowing down their issues and doing research to find the resolution.',
+];
+
 const Experience = () => {
-  const classes = useStyles();
   return (
     <>
-      <div className={classes.experience}>
+      <div className='experience'>
         <h1>Experience</h1>
       </div>
-      <div className={classes.experienceBody}>
+      <div className='experienceBody'>
         <Work
           bulletPoints={ivantiExperience}
           title='Ivanti - Software Engineer'
           location='South Jordan, Utah'
           timePeriod='Oct 2017 - Present'
+          logoSrc='images/ivanti.jpg'
         />
         <Work
-          bulletPoints={ivantiExperience}
-          title='Ivanti - Software Engineer'
-          location='South Jordan, Utah'
-          timePeriod='Oct 2017 - Present'
+          bulletPoints={airForceExperience}
+          title='U.S. Air Force - Software Engineer'
+          location='Hill AFB, Utah'
+          timePeriod='May 2016 - Oct 2017'
+          logoSrc='images/AFLogo.jpg'
+        />
+        <Work
+          bulletPoints={canyonsExperience}
+          title='Canyons School District - Applications Engineer'
+          location='Sandy, Utah'
+          timePeriod='May 2015 - Sept 2015'
+          logoSrc='images/CSD.jpg'
+        />
+        <Work
+          bulletPoints={imagicomExperience}
+          title='Imagicom - QA/Tech Support'
+          location='Remote'
+          timePeriod='Dec 2012 - May 2015'
+          logoSrc='images/Imagicom.jpeg'
         />
       </div>
     </>
