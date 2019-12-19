@@ -65,8 +65,19 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Nav = ({ isDesktop, scrolling }) => {
+  const clearedSelections = {
+    about: false,
+    experience: false,
+    skills: false,
+    education: false,
+    contact: false
+  };
   const classes = useStyles();
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(clearedSelections);
+  const clearSelectedItems = () => {
+    setSelectedItem(clearSelectedItems);
+  };
   const smallNav = (
     <nav className={classes.smallNav}>
       <MenuIcon
@@ -97,31 +108,58 @@ const Nav = ({ isDesktop, scrolling }) => {
         <Divider />
         <div className="drawerDiv">
           <List>
-            <ListItem button onClick={() => scrolling('about')}>
+            <ListItem
+              button
+              onClick={() => scrolling('about')}
+              selected={selectedItem.about}
+            >
               <ListItemIcon>
                 <PersonIcon className={classes.personIcon} />
               </ListItemIcon>
               <ListItemText>About</ListItemText>
             </ListItem>
-            <ListItem button onClick={() => scrolling('experience')}>
+            <ListItem
+              button
+              onClick={() => scrolling('experience')}
+              selected={selectedItem.experience}
+              // I Am HERE
+              onMouseUp={() =>
+                setSelectedItem({
+                  ...selectedItem,
+                  experience: false
+                })
+              }
+            >
               <ListItemIcon>
                 <ExperienceIcon className={classes.experienceIcon} />
               </ListItemIcon>
               <ListItemText>Experience</ListItemText>
             </ListItem>
-            <ListItem button onClick={() => scrolling('skills')}>
+            <ListItem
+              button
+              onClick={() => scrolling('skills')}
+              selected={selectedItem.skills}
+            >
               <ListItemIcon className={classes.skillsIcon}>
                 <SkillsIcon />
               </ListItemIcon>
               <ListItemText>Skills</ListItemText>
             </ListItem>
-            <ListItem button onClick={() => scrolling('education')}>
+            <ListItem
+              button
+              onClick={() => scrolling('education')}
+              selected={selectedItem.education}
+            >
               <ListItemIcon>
                 <EducationIcon className={classes.educationIcon} />
               </ListItemIcon>
               <ListItemText>Education</ListItemText>
             </ListItem>
-            <ListItem button onClick={() => scrolling('contact')}>
+            <ListItem
+              button
+              onClick={() => scrolling('contact')}
+              selected={selectedItem.contact}
+            >
               <ListItemIcon>
                 <MailIcon className={classes.contactIcon} />
               </ListItemIcon>

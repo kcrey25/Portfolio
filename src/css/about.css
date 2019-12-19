@@ -8,4 +8,15 @@
 
 .aboutBody {
   background: lightgray;
+  padding: 50px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.aboutIntro {
+  border-left: 5px solid #51a38d;
+  color: #51a38d;
+  padding: 5px 0 5px 20px;
+  font-size: 125%;
+  margin-bottom: 20px;
 }
