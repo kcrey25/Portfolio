@@ -12,13 +12,13 @@ const skills = [
   },
   {
     title: 'Responsive Design',
-    iconPath: './/images/responsive.png',
+    iconPath: './images/responsive.png',
     notes:
       'Responsive design is key for a great user experience. I can make a great experience on any device.'
   },
   {
     title: 'Communication',
-    iconPath: './/images/communication.png',
+    iconPath: './images/communication.png',
     notes: 'I believe that communication will insure the best results.'
   }
 ];

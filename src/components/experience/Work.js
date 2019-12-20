@@ -2,12 +2,12 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
-
-import '../../css/work.css';
 import { CardHeader, Avatar } from '@material-ui/core';
 
+import '../../css/work.css';
+
 const Work = ({ title, bulletPoints, timePeriod, location, logoSrc }) => {
-  const bullet = <span className='bullet'>•</span>;
+  const bullet = <span className="bullet">•</span>;
 
   const content = bulletPoints.map(function(pt) {
     return (
@@ -18,14 +18,14 @@ const Work = ({ title, bulletPoints, timePeriod, location, logoSrc }) => {
   });
 
   return (
-    <Card className='card'>
+    <Card className="card">
       <CardHeader
-        className='card-header'
-        title={<p className='card-title'>{title}</p>}
-        avatar={<img className='avatar-img' src={logoSrc}></img>}
+        className="card-header"
+        title={<p className="card-title">{title}</p>}
+        avatar={<img className="avatar-img" src={logoSrc}></img>}
       />
-      <CardContent className='card-content'>
-        <hr className='' />
+      <CardContent className="card-content">
+        <hr className="" />
         {content}
       </CardContent>
       <CardActions>

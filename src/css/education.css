@@ -6,6 +6,57 @@
   font-family: sans-serif;
 }
 
-.educationBody {
+.edu-card {
+  width: 650px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.byui-logo {
+  height: 100px;
+}
+
+.byui-title {
+  font-size: 32px;
+  color: #0177c8;
+}
+
+.byui-title:hover {
+  text-decoration: underline;
+}
+
+.edu-sub-header {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.bullet {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.my-education {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
   background: lightgray;
+  padding: 50px;
+}
+
+.give-me-space {
+  margin-right: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  .education {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1689px) {
+  .give-me-space {
+    margin: 0 auto 50px;
+  }
 }
