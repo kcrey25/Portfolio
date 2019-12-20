@@ -92,6 +92,22 @@ const Nav = ({ isDesktop, scrolling }) => {
     </nav>
   );
 
+  const aboutSelectedStyle = selectedItem.about
+    ? { borderLeft: '4px solid #008073' }
+    : null;
+  const experienceSelectedStyle = selectedItem.experience
+    ? { borderLeft: '4px solid #00BBD3' }
+    : null;
+  const skillsSelectedStyle = selectedItem.skills
+    ? { borderLeft: '4px solid #3F51B5' }
+    : null;
+  const educationSelectedStyle = selectedItem.education
+    ? { borderLeft: '4px solid #9C27B0' }
+    : null;
+  const contactSelectedStyle = selectedItem.contact
+    ? { borderLeft: '4px solid #F44336' }
+    : null;
+
   return (
     <>
       {!isDesktop ? smallNav : null}
@@ -101,7 +117,13 @@ const Nav = ({ isDesktop, scrolling }) => {
         onClose={() => setDrawerOpen(false)}
         onClick={() => setDrawerOpen(false)}
       >
-        <div className="nav-title" onClick={() => scrolling('intro')}>
+        <div
+          className="nav-title"
+          onClick={() => {
+            scrolling('intro');
+            setSelectedItem(clearedSelections);
+          }}
+        >
           <p className="name-title">Casey Christensen</p>
           <p>Software Engineer</p>
         </div>
@@ -110,8 +132,11 @@ const Nav = ({ isDesktop, scrolling }) => {
           <List>
             <ListItem
               button
-              onClick={() => scrolling('about')}
-              selected={selectedItem.about}
+              onClick={() => {
+                scrolling('about');
+                setSelectedItem({ about: true });
+              }}
+              style={aboutSelectedStyle}
             >
               <ListItemIcon>
                 <PersonIcon className={classes.personIcon} />
@@ -120,15 +145,11 @@ const Nav = ({ isDesktop, scrolling }) => {
             </ListItem>
             <ListItem
               button
-              onClick={() => scrolling('experience')}
-              selected={selectedItem.experience}
-              // I Am HERE
-              onMouseUp={() =>
-                setSelectedItem({
-                  ...selectedItem,
-                  experience: false
-                })
-              }
+              onClick={() => {
+                scrolling('experience');
+                setSelectedItem({ experience: true });
+              }}
+              style={experienceSelectedStyle}
             >
               <ListItemIcon>
                 <ExperienceIcon className={classes.experienceIcon} />
@@ -137,8 +158,11 @@ const Nav = ({ isDesktop, scrolling }) => {
             </ListItem>
             <ListItem
               button
-              onClick={() => scrolling('skills')}
-              selected={selectedItem.skills}
+              onClick={() => {
+                scrolling('skills');
+                setSelectedItem({ skills: true });
+              }}
+              style={skillsSelectedStyle}
             >
               <ListItemIcon className={classes.skillsIcon}>
                 <SkillsIcon />
@@ -147,8 +171,11 @@ const Nav = ({ isDesktop, scrolling }) => {
             </ListItem>
             <ListItem
               button
-              onClick={() => scrolling('education')}
-              selected={selectedItem.education}
+              onClick={() => {
+                scrolling('education');
+                setSelectedItem({ education: true });
+              }}
+              style={educationSelectedStyle}
             >
               <ListItemIcon>
                 <EducationIcon className={classes.educationIcon} />
@@ -157,8 +184,11 @@ const Nav = ({ isDesktop, scrolling }) => {
             </ListItem>
             <ListItem
               button
-              onClick={() => scrolling('contact')}
-              selected={selectedItem.contact}
+              onClick={() => {
+                scrolling('contact');
+                setSelectedItem({ contact: true });
+              }}
+              style={contactSelectedStyle}
             >
               <ListItemIcon>
                 <MailIcon className={classes.contactIcon} />
