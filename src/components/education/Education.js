@@ -4,8 +4,19 @@ import Card from '@material-ui/core/Card';
 import { CardHeader, Avatar } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 
-const Education = () => {
+const Education = ({ under500 }) => {
   const bullet = <span className="bullet">•</span>;
+  const byuiTitle = (
+    <a className="byui-title" href="https://byui.edu">
+      Brigham Young University-Idaho
+    </a>
+  );
+
+  const scrumTitle = (
+    <a className="byui-title" href="https://scrumalliance.org/">
+      Certified Scrum Master
+    </a>
+  );
 
   return (
     <>
@@ -15,11 +26,7 @@ const Education = () => {
       <div className="my-education">
         <Card className="edu-card give-me-space">
           <CardHeader
-            title={
-              <a className="byui-title" href="https://byui.edu">
-                Brigham Young University-Idaho
-              </a>
-            }
+            title={byuiTitle}
             subheader={
               <p className="edu-sub-header">Rexburg, Idaho 2014-2016</p>
             }
@@ -34,11 +41,7 @@ const Education = () => {
         </Card>
         <Card className="edu-card">
           <CardHeader
-            title={
-              <a className="byui-title" href="https://scrumalliance.org/">
-                Certified Scrum Master
-              </a>
-            }
+            title={scrumTitle}
             subheader={<p className="edu-sub-header">2017</p>}
             avatar={<img className="byui-logo" src="images/CSM.png"></img>}
           ></CardHeader>

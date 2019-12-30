@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../css/skill.css';
+import './aboutPt.css';
 
-const Skill = props => {
+const AboutPt = props => {
   return (
     <div className="skill">
       <div className="skill-container">
@@ -15,4 +15,4 @@ const Skill = props => {
   );
 };
 
-export default Skill;
+export default AboutPt;

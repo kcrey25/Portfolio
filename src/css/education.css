@@ -60,3 +60,17 @@
     margin: 0 auto 50px;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .byui-logo {
+    display: none;
+  }
+
+  .my-education {
+    padding: 10px;
+  }
+
+  .give-me-space {
+    margin: 0 0 10px;
+  }
+}

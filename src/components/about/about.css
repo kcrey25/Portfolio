@@ -21,8 +21,32 @@
   margin-bottom: 20px;
 }
 
+.skills {
+  background: #008073;
+  color: white;
+  padding: 20px 50px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.mySkills {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
 @media only screen and (max-width: 700px) {
+  .skills {
+    text-align: center;
+  }
+
   .about {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .aboutBody {
+    padding: 20px;
   }
 }
