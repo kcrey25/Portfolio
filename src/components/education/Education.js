@@ -1,8 +1,9 @@
 import React from 'react';
-import '../../css/education.css';
 import Card from '@material-ui/core/Card';
 import { CardHeader, Avatar } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
+
+import './education.css';
 
 const Education = ({ under500 }) => {
   const bullet = <span className="bullet">•</span>;

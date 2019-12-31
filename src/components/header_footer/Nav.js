@@ -9,12 +9,13 @@ import SkillsIcon from '@material-ui/icons/Equalizer';
 import EducationIcon from '@material-ui/icons/School';
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
-import '../../css/Nav.css';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
 import { ListItemText, ListItemIcon } from '@material-ui/core';
+
+import './Nav.css';
 
 const useStyles = makeStyles(() => ({
   personIcon: {

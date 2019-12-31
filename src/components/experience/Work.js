@@ -4,7 +4,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import { CardHeader, Avatar } from '@material-ui/core';
 
-import '../../css/work.css';
+import './work.css';
 
 const Work = ({ title, bulletPoints, timePeriod, location, logoSrc }) => {
   const bullet = <span className="bullet">•</span>;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-import '../../css/home.css';
+import './home.css';
 import Skills from '../Skills/Skills';
 import About from '../about/About';
 import Nav from '../header_footer/Nav';
