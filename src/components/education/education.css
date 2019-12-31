@@ -31,11 +31,6 @@
   font-size: 18px;
 }
 
-.bullet {
-  display: inline-block;
-  margin: 0 3px;
-}
-
 .my-education {
   display: flex;
   margin: 0 auto;
@@ -59,10 +54,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .edu-logo {
-    display: none;
-  }
-
   .my-education {
     padding: 10px;
   }

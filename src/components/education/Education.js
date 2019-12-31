@@ -6,16 +6,15 @@ import CardContent from '@material-ui/core/CardContent';
 import './education.css';
 
 const Education = ({ under500 }) => {
-  const bullet = <span className="bullet">•</span>;
   const byuiTitle = (
     <a className="edu-title" href="https://byui.edu">
-      Brigham Young University-Idaho
+      BYU-Idaho
     </a>
   );
 
   const scrumTitle = (
     <a className="edu-title" href="https://scrumalliance.org/">
-      Certified Scrum Master
+      Scrum Master
     </a>
   );
 
@@ -34,9 +33,7 @@ const Education = ({ under500 }) => {
         <Card className="edu-card give-me-space">
           <CardHeader
             title={byuiTitle}
-            subheader={
-              <p className="edu-sub-header">Rexburg, Idaho 2014-2016</p>
-            }
+            subheader={<p className="edu-sub-header">2013-2016</p>}
             avatar={
               <a href="https://byui.edu">
                 <img className="edu-logo" src="images/byui_logo.png"></img>
@@ -44,8 +41,10 @@ const Education = ({ under500 }) => {
             }
           ></CardHeader>
           <CardContent>
-            <p>{bullet} B.S. in Computer Engineering</p>
-            <p>{bullet} IEEE</p>
+            <ul>
+              <li>B.S. in Computer Engineering</li>
+              <li>IEEE</li>
+            </ul>
           </CardContent>
         </Card>
         <Card className="edu-card give-me-space">
@@ -59,7 +58,9 @@ const Education = ({ under500 }) => {
             }
           ></CardHeader>
           <CardContent>
-            <p>{bullet} Certified Scrum Master by the Scrum Alliance</p>
+            <ul>
+              <li>Certified Scrum Master by the Scrum Alliance</li>
+            </ul>
           </CardContent>
         </Card>
         <Card className="edu-card">
@@ -73,11 +74,12 @@ const Education = ({ under500 }) => {
             }
           ></CardHeader>
           <CardContent>
-            <p>
-              {bullet} I am fluent in Spanish after two and half years of
-              studying and speaking Spanish with people across Central and South
-              America.
-            </p>
+            <ul>
+              <li>
+                I am fluent in Spanish after two and half years of studying and
+                speaking Spanish with people from Central and South America.
+              </li>
+            </ul>
           </CardContent>
         </Card>
       </div>

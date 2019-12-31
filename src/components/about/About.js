@@ -33,9 +33,24 @@ const About = () => {
         <h1>About</h1>
       </div>
       <div className="aboutBody">
-        <section className="aboutIntro">
-          Adaptive full-stack developer with a passion for solving problems,
-          creating the best user experience, and continuous learning.
+        <section>
+          <div className="about-left">
+            Adaptive full-stack developer with a passion for solving problems,
+            creating the best user experience, and continuous learning.
+          </div>
+          <div className="about-me">
+            <p>
+              I love creating through software development. It has been my
+              passion for the last decade! Although I do spend a lot of time at
+              work, I am more than just a developer.
+            </p>
+            <p style={{ marginTop: '15px' }}>
+              I have a gorgeous wife and 2 crazy boys. I absolutely love
+              spending time with them. We spend most of our time outdoors, from
+              playing in our backyard to amazing hikes up the canyon. I also
+              snowboard and play baseball as much as I can.
+            </p>
+          </div>
         </section>
         <div className="mySkills">{myPoints}</div>
       </div>

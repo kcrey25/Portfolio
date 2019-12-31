@@ -58,7 +58,8 @@ const useStyles = makeStyles(() => ({
     fontFamily: 'sans-serif',
     fontSize: '22px',
     width: '100%',
-    color: '#008073'
+    color: '#008073',
+    fontWeight: 600
   },
   position: {
     color: '#B9B9B9',
