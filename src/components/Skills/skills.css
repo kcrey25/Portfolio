@@ -20,8 +20,11 @@
   padding: 10px 0;
 }
 
+.skill-img {
+  height: 150px;
+}
+
 .img-div {
-  width: 150px;
   text-align: center;
 }
 
@@ -32,5 +35,11 @@
 @media only screen and (max-width: 700px) {
   .skills {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .skill-img {
+    height: 80px;
   }
 }

@@ -27,7 +27,7 @@ const Skills = () => {
     return (
       <div className="single-skill">
         <div className="img-div">
-          <img src={skill.path} height="150px" />
+          <img className="skill-img" src={skill.path} />
         </div>
         <p className="skill-name">{skill.name}</p>
       </div>
