@@ -61,7 +61,8 @@ const useStyles = makeStyles(() => ({
     color: '#008073'
   },
   position: {
-    color: '#B9B9B9'
+    color: '#B9B9B9',
+    fontWeight: 600
   }
 }));
 
