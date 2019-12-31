@@ -78,7 +78,7 @@ const Home = () => {
     </h1>
   ) : (
     <div className="change-lives">
-      <label>Let's Change Lives.</label>
+      <div>Let's Change Lives.</div>
     </div>
   );
 

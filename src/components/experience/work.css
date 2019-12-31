@@ -9,11 +9,6 @@
   padding-bottom: 0 !important;
 }
 
-.bullet {
-  display: inline-block;
-  margin: 0 2px;
-}
-
 .card-title {
   font-size: 24px;
   color: #008073;
@@ -32,7 +27,7 @@
   margin-bottom: 20px;
 }
 
-.card-content p {
+.card-content li {
   margin-bottom: 20px;
 }
 

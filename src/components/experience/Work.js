@@ -7,14 +7,8 @@ import { CardHeader, Avatar } from '@material-ui/core';
 import './work.css';
 
 const Work = ({ title, bulletPoints, timePeriod, location, logoSrc }) => {
-  const bullet = <span className="bullet">•</span>;
-
-  const content = bulletPoints.map(function(pt) {
-    return (
-      <p>
-        {bullet} {pt}
-      </p>
-    );
+  const workList = bulletPoints.map(function(pt) {
+    return <li>{pt}</li>;
   });
 
   return (
@@ -26,7 +20,7 @@ const Work = ({ title, bulletPoints, timePeriod, location, logoSrc }) => {
       />
       <CardContent className="card-content">
         <hr className="" />
-        {content}
+        <ul>{workList}</ul>
       </CardContent>
       <CardActions>
         {timePeriod} | {location}
