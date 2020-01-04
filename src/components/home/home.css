@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 /* 'Rock Salt' */
 
+/* @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap'); */
+/* 'Sriracha' */
+
+/* @import url('https://fonts.googleapis.com/css?family=Delius&display=swap'); */
+/* 'Delius' */
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,7 +19,7 @@ html {
 
 .me-section {
   width: 100%;
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -25,8 +31,8 @@ html {
 
 .pic-title {
   color: #fff;
-  padding: 25px 0 0 50px;
-  font-size: 2.9rem;
+  padding: 25px 0 0 2.2vw;
+  font-size: 2.2vw;
   font-family: 'Rock Salt', sans-serif;
   position: absolute;
   top: 8px;

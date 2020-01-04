@@ -43,6 +43,10 @@ const Education = ({ under500 }) => {
           <CardContent>
             <ul>
               <li>B.S. in Computer Engineering</li>
+              <li>
+                Research and Creative Works Conference – Made a checkers playing
+                robot.
+              </li>
               <li>IEEE</li>
             </ul>
           </CardContent>

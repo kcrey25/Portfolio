@@ -4,7 +4,7 @@ import Work from './Work';
 import './experience.css';
 
 const ivantiExperience = [
-  'Developed solutions for Windows desktop and Android applications.',
+  'Developed solutions for Web, Windows desktop and Android applications.',
   'Added features which improved customer implementation time from months, down to a few hours.',
   'Added functional and unit tests which improved product quality and testing time.',
   'Worked with WebView and added custom themes and styling with CSS, HTML, and JavaScript.',
