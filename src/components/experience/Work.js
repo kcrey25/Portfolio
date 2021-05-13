@@ -7,7 +7,7 @@ import { CardHeader, Avatar } from '@material-ui/core';
 import './work.css';
 
 const Work = ({ title, bulletPoints, timePeriod, location, logoSrc }) => {
-  const workList = bulletPoints.map(function(pt) {
+  const workList = bulletPoints.map(pt => {
     return <li>{pt}</li>;
   });
 

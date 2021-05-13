@@ -13,7 +13,7 @@ const desktopHeight = 415;
 
 const Home = () => {
   useEffect(() => {
-    function handleResize() {
+    const handleResize = () => {
       setIsDesktop(
         window.innerWidth >= desktopWidth && window.innerHeight > desktopHeight
       );

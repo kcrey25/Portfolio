@@ -3,6 +3,10 @@ import Work from './Work';
 
 import './experience.css';
 
+const testoutExperience = [
+  'Developed desktop simulations in the browser using React and TypeScript.',
+];
+
 const ivantiExperience = [
   'Developed solutions for Web, Windows desktop and Android applications.',
   'Added features which improved customer implementation time from months, down to a few hours.',
@@ -38,10 +42,17 @@ const Experience = () => {
       </div>
       <div className="experienceBody">
         <Work
+          bulletPoints={testoutExperience}
+          title="TestOut - Full-Stack Software Engineer"
+          location="Pleasant Grove, Utah"
+          timePeriod="Nov 2020 - Present"
+          logoSrc="images/testoutlogo.png"
+        />
+        <Work
           bulletPoints={ivantiExperience}
           title="Ivanti - Software Engineer"
           location="South Jordan, Utah"
-          timePeriod="Oct 2017 - Present"
+          timePeriod="Oct 2017 - Nov 2020"
           logoSrc="images/ivanti.jpg"
         />
         <Work

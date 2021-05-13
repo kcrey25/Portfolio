@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './skills.css';
 import { width } from '@material-ui/system';
 
@@ -13,7 +12,7 @@ const skills = [
   { name: 'HTML5', path: './images/skills/html5.png' },
   { name: 'JavaScript', path: './images/skills/javascript.png' },
   { name: 'Jenkins', path: './images/skills/jenkins.png' },
-  { name: 'jQuery', path: './images/skills/jquery.png' },
+  { name: 'TypeScript', path: './images/skills/typescriptlogo.svg' },
   { name: 'MongoDB', path: './images/skills/mongodb.png' },
   { name: 'NodeJS', path: './images/skills/nodejs.png' },
   { name: 'React', path: './images/skills/react.png' },
@@ -23,11 +22,11 @@ const skills = [
 ];
 
 const Skills = () => {
-  const mySkills = skills.map(function(skill) {
+  const mySkills = skills.map(skill => {
     return (
       <div className="single-skill">
         <div className="img-div">
-          <img className="skill-img" src={skill.path} />
+          <img className="skill-img" alt={skill.name} src={skill.path} />
         </div>
         <p className="skill-name">{skill.name}</p>
       </div>
