@@ -5,6 +5,9 @@ import './experience.css';
 
 const testoutExperience = [
   'Developed desktop simulations in the browser using React and TypeScript.',
+  'Contributed to React component libraries.',
+  'Leverged Bitbucket as my source control and Jenkins as a build server.',
+  'Improved and maintained existing code to reduce technical debt and fix issues.'
 ];
 
 const ivantiExperience = [

@@ -8,7 +8,7 @@ const skills = [
   { name: 'C#', path: './images/skills/CSharp.png' },
   { name: 'CSS3', path: './images/skills/css3.png' },
   { name: 'Git', path: './images/skills/git.png' },
-  { name: 'Heroku', path: './images/skills/heroku.png' },
+  { name: 'GitHub', path: './images/skills/github.png' },
   { name: 'HTML5', path: './images/skills/html5.png' },
   { name: 'JavaScript', path: './images/skills/javascript.png' },
   { name: 'Jenkins', path: './images/skills/jenkins.png' },
@@ -22,7 +22,9 @@ const skills = [
 ];
 
 const Skills = () => {
-  const mySkills = skills.map(skill => {
+  const mySkills = skills.sort((a,b) => {
+    return (a.name > b.name)? 1:-1;
+  }).map(skill => {
     return (
       <div className="single-skill">
         <div className="img-div">
