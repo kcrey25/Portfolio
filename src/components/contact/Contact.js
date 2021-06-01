@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <div className="contact">
         <h1>Contact</h1>
       </div>
@@ -58,7 +58,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

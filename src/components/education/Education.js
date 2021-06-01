@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
-import { CardHeader, Avatar } from '@material-ui/core';
+import { CardHeader } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 
 import './education.css';
@@ -25,7 +25,7 @@ const Education = ({ under500 }) => {
   );
 
   return (
-    <>
+    <React.Fragment>
       <div className="education">
         <h1>Education</h1>
       </div>
@@ -36,7 +36,7 @@ const Education = ({ under500 }) => {
             subheader={<p className="edu-sub-header">2013-2016</p>}
             avatar={
               <a href="https://byui.edu">
-                <img className="edu-logo" src="images/byui_logo.png"></img>
+                <img className="edu-logo" src="images/byui_logo.png" alt="BYU-I"></img>
               </a>
             }
           ></CardHeader>
@@ -57,7 +57,7 @@ const Education = ({ under500 }) => {
             subheader={<p className="edu-sub-header">2017</p>}
             avatar={
               <a href="https://scrumalliance.org/">
-                <img className="edu-logo" src="images/CSM.png"></img>
+                <img className="edu-logo" src="images/CSM.png" alt="scrum alliance"></img>
               </a>
             }
           ></CardHeader>
@@ -73,7 +73,7 @@ const Education = ({ under500 }) => {
             subheader={<p className="edu-sub-header">2009-2012</p>}
             avatar={
               <a href="https://uvu.edu">
-                <img className="edu-logo" src="images/uvu.png"></img>
+                <img className="edu-logo" src="images/uvu.png" alt="UVU"></img>
               </a>
             }
           ></CardHeader>
@@ -87,7 +87,7 @@ const Education = ({ under500 }) => {
           </CardContent>
         </Card>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

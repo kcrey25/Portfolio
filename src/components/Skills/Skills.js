@@ -1,6 +1,5 @@
 import React from 'react';
 import './skills.css';
-import { width } from '@material-ui/system';
 
 const skills = [
   { name: 'Android', path: './images/skills/android.png' },
@@ -36,12 +35,12 @@ const Skills = () => {
   });
 
   return (
-    <>
+    <React.Fragment>
       <div className="skills">
         <h1>Skills</h1>
       </div>
       <section className="skills-body">{mySkills}</section>
-    </>
+    </React.Fragment>
   );
 };
 

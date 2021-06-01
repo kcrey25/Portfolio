@@ -39,7 +39,7 @@ const imagicomExperience = [
 
 const Experience = () => {
   return (
-    <>
+    <React.Fragment>
       <div className="experience">
         <h1>Experience</h1>
       </div>
@@ -80,7 +80,7 @@ const Experience = () => {
           logoSrc="images/Imagicom.jpeg"
         />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

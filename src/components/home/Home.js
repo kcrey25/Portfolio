@@ -82,8 +82,8 @@ const Home = () => {
     </div>
   );
 
-  return isLoading ? null : (
-    <>
+  return isLoading ? (<div>Loading...</div>) : (
+    <React.Fragment>
       {/* Tells phones not to lie about their width: Use for all responsive designs. Applies margin to outside, padding to inside, etc... */}
       <meta
         name="viewport"
@@ -97,6 +97,7 @@ const Home = () => {
             src={imgUrl}
             className="pic"
             style={{ marginTop: `${mobileNavHeight}px` }}
+            alt="Casey"
           />
           {meSectionContent}
         </section>
@@ -116,7 +117,7 @@ const Home = () => {
           <Contact />
         </section>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

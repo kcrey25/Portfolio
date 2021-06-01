@@ -28,7 +28,7 @@ const About = () => {
     return <AboutPt key={i} {...pt} />;
   });
   return (
-    <>
+    <React.Fragment>
       <div className="about">
         <h1>About</h1>
       </div>
@@ -54,7 +54,7 @@ const About = () => {
         </section>
         <div className="mySkills">{myPoints}</div>
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

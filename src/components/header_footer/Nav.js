@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
 import PersonIcon from '@material-ui/icons/Person';
 import ExperienceIcon from '@material-ui/icons/TrendingUp';
 import MailIcon from '@material-ui/icons/MailOutline';
@@ -112,7 +109,7 @@ const Nav = ({ isDesktop, scrolling }) => {
     : null;
 
   return (
-    <>
+    <React.Fragment>
       {!isDesktop ? smallNav : null}
       <Drawer
         variant={isDesktop ? 'permanent' : 'temporary'}
@@ -201,7 +198,7 @@ const Nav = ({ isDesktop, scrolling }) => {
           </List>
         </div>
       </Drawer>
-    </>
+    </React.Fragment>
   );
 };
 
