@@ -46,7 +46,7 @@ const Experience = () => {
       <div className="experienceBody">
         <Work
           bulletPoints={testoutExperience}
-          title="TestOut - Full-Stack Software Engineer"
+          title="TestOut - Sr. Full-Stack Software Engineer"
           location="Pleasant Grove, Utah"
           timePeriod="Nov 2020 - Present"
           logoSrc="images/testoutlogo.png"

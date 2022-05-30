@@ -45,7 +45,7 @@ const About = () => {
               work, I am more than just a developer.
             </p>
             <p style={{ marginTop: '15px' }}>
-              I have a gorgeous wife and 3 crazy boys. I absolutely love
+              I have a gorgeous wife and 4 crazy boys. I absolutely love
               spending time with them. We spend most of our time outdoors, from
               playing in our backyard to amazing hikes up the canyon. I also
               snowboard and play baseball as much as I can.
