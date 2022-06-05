@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
+import * as imgHProfile from '../../resources/images/Profile-Horiz.jpeg';
+import * as imgVProfile from '../../resources/images/Profile-Vert.jpeg';
 
 import './home.css';
 import Skills from '../Skills/Skills';
@@ -64,8 +66,8 @@ const Home = () => {
   const executeScroll = myRef => scrollToRef(myRef);
 
   const imgUrl = isDesktop
-    ? './images/Profile-Horiz.jpeg'
-    : './images/Profile-Vert.jpeg';
+    ? imgHProfile
+    : imgVProfile;
 
   const meSectionContent = isDesktop ? (
     <h1 className="pic-title">

@@ -1,4 +1,7 @@
 import React from 'react';
+import * as imgDev from '../../resources/images/Software.png';
+import * as imgResponsive from '../../resources/images/responsive.png';
+import * as imgCom from '../../resources/images/communication.png';
 
 import AboutPt from './AboutPt';
 import './about.css';
@@ -6,19 +9,19 @@ import './about.css';
 const aboutPts = [
   {
     title: 'Development',
-    iconPath: './images/Software.png',
+    iconPath: imgDev,
     notes:
       "I have experience working on software for F-16's, mobile apps, desktop apps, and websites."
   },
   {
     title: 'Responsive Design',
-    iconPath: './images/responsive.png',
+    iconPath: imgResponsive,
     notes:
       'Responsive design is key for a great user experience. I can make a great experience on any device.'
   },
   {
     title: 'Communication',
-    iconPath: './images/communication.png',
+    iconPath: imgCom,
     notes: 'I believe that communication will insure the best results.'
   }
 ];

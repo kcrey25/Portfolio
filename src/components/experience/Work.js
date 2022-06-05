@@ -8,7 +8,7 @@ import './work.css';
 
 const Work = ({ title, bulletPoints, timePeriod, location, logoSrc }) => {
   const workList = bulletPoints.map(pt => {
-    return <li>{pt}</li>;
+    return <li key={pt}>{pt}</li>;
   });
 
   return (

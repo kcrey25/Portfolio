@@ -6,7 +6,7 @@
   font-family: sans-serif;
 }
 
-.skills-body {
+.skillsBody {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -15,22 +15,22 @@
   justify-content: center;
 }
 
-.skill-name {
+.skillName {
   text-align: center;
   padding: 10px 0;
   font-weight: 600;
 }
 
-.skill-img {
+.skillImg {
   height: 150px;
 }
 
-.img-div {
+.imgDiv {
   text-align: center;
   width: 150px;
 }
 
-.single-skill {
+.singleSkill {
   margin: 20px;
 }
 
@@ -41,15 +41,15 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .skill-img {
+  .skillImg {
     height: 80px;
   }
 
-  .img-div {
+  .imgDiv {
     width: 80px;
   }
 
-  .skill-name {
+  .skillName {
     width: 80px;
   }
 }

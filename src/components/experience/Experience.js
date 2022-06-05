@@ -1,5 +1,10 @@
 import React from 'react';
 import Work from './Work';
+import * as imgTestoutlogo from "../../resources/images/testoutlogo.png";
+import * as imgIvanti from "../../resources/images/ivanti.jpg";
+import * as imgAirForce from "../../resources/images/AFLogo.jpg";
+import * as imgCsd from "../../resources/images/CSD.jpg";
+import * as imgImagicom from "../../resources/images/Imagicom.jpeg";
 
 import './experience.css';
 
@@ -49,35 +54,35 @@ const Experience = () => {
           title="TestOut - Sr. Full-Stack Software Engineer"
           location="Pleasant Grove, Utah"
           timePeriod="Nov 2020 - Present"
-          logoSrc="images/testoutlogo.png"
+          logoSrc={imgTestoutlogo}
         />
         <Work
           bulletPoints={ivantiExperience}
           title="Ivanti - Software Engineer"
           location="South Jordan, Utah"
           timePeriod="Oct 2017 - Nov 2020"
-          logoSrc="images/ivanti.jpg"
+          logoSrc={imgIvanti}
         />
         <Work
           bulletPoints={airForceExperience}
           title="U.S. Air Force - Software Engineer"
           location="Hill AFB, Utah"
           timePeriod="May 2016 - Oct 2017"
-          logoSrc="images/AFLogo.jpg"
+          logoSrc={imgAirForce}
         />
         <Work
           bulletPoints={canyonsExperience}
           title="Canyons School District - Applications Engineer"
           location="Sandy, Utah"
           timePeriod="May 2015 - Sept 2015"
-          logoSrc="images/CSD.jpg"
+          logoSrc={imgCsd}
         />
         <Work
           bulletPoints={imagicomExperience}
           title="Imagicom - QA/Tech Support"
           location="Remote"
           timePeriod="Dec 2012 - May 2015"
-          logoSrc="images/Imagicom.jpeg"
+          logoSrc={imgImagicom}
         />
       </div>
     </React.Fragment>

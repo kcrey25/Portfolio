@@ -2,6 +2,9 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import { CardHeader } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
+import * as imgByui from '../../resources/images/byui_logo.png';
+import * as imgCsm from '../../resources/images/CSM.png';
+import * as imgUvu from '../../resources/images/uvu.png';
 
 import './education.css';
 
@@ -36,7 +39,7 @@ const Education = ({ under500 }) => {
             subheader={<p className="edu-sub-header">2013-2016</p>}
             avatar={
               <a href="https://byui.edu">
-                <img className="edu-logo" src="images/byui_logo.png" alt="BYU-I"></img>
+                <img className="edu-logo" src={imgByui} alt="BYU-I"></img>
               </a>
             }
           ></CardHeader>
@@ -57,7 +60,7 @@ const Education = ({ under500 }) => {
             subheader={<p className="edu-sub-header">2017</p>}
             avatar={
               <a href="https://scrumalliance.org/">
-                <img className="edu-logo" src="images/CSM.png" alt="scrum alliance"></img>
+                <img className="edu-logo" src={imgCsm} alt="scrum alliance"></img>
               </a>
             }
           ></CardHeader>
@@ -73,7 +76,7 @@ const Education = ({ under500 }) => {
             subheader={<p className="edu-sub-header">2009-2012</p>}
             avatar={
               <a href="https://uvu.edu">
-                <img className="edu-logo" src="images/uvu.png" alt="UVU"></img>
+                <img className="edu-logo" src={imgUvu} alt="UVU"></img>
               </a>
             }
           ></CardHeader>
