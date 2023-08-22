@@ -8,11 +8,14 @@ import * as imgImagicom from "../../resources/images/Imagicom.jpeg";
 
 import './experience.css';
 
-const testoutExperience = [
+const comptiaExperience = [
+  'Mentored and trained several developers.',
   'Developed desktop simulations in the browser using React and TypeScript.',
-  'Contributed to React component libraries.',
+  'Wrote automated tests to ensure code quality.',
+  'Wrote source-to-source compilers to update old code to React and TypeScript.',
   'Leveraged Bitbucket as my source control and Jenkins as a build server.',
-  'Improved and maintained existing code to reduce technical debt and fix issues.'
+  'Improved and maintained existing code to reduce technical debt and fix issues.',
+  'Contributed to React component libraries.'
 ];
 
 const ivantiExperience = [
@@ -50,9 +53,9 @@ const Experience = () => {
       </div>
       <div className="experienceBody">
         <Work
-          bulletPoints={testoutExperience}
-          title="TestOut - Sr. Full-Stack Software Engineer"
-          location="Pleasant Grove, Utah"
+          bulletPoints={comptiaExperience}
+          title="CompTIA - Sr. Full-Stack Software Engineer"
+          location="Remote (Amarillo, Texas)"
           timePeriod="Nov 2020 - Present"
           logoSrc={imgTestoutlogo}
         />
